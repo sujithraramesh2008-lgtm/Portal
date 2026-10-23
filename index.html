@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Student Attendance Tracker</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header><h1>Student Attendance Tracker</h1></header>
+ <main>
+ <section class="card">
+ <h2>Add Student</h2>
+ <div class="row">
+ <input type="text" id="studentName" placeholder="Student name">
+ <input type="text" id="rollNo" placeholder="Roll number">
+ <button id="addBtn">Add</button>
+ </div>
+ </section>
+ <section class="card">
+ <h2>Mark Attendance</h2>
+ <div class="row">
+ <label for="date">Date:</label>
+ <input type="date" id="date">
+ <input type="text" id="search" placeholder="Search name or roll no">
+ </div>
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr><th>Roll No</th><th>Name</th><th>Status</th><th>Attendance %</th><th>Action</th></tr>
+ </thead>
+ <tbody id="tableBody"></tbody>
+ </table>
+ </div> Page 4
+ <p id="emptyMsg">No students found.</p>
+ </section>
+ <section class="card summary">
+ <div>Total: <strong id="total">0</strong></div>
+ <div>Present: <strong id="present">0</strong></div>
+ <div>Absent: <strong id="absent">0</strong></div>
+ </section>
+ </main>
+ <script src="script.js"></script>
+</body>
+</html>
