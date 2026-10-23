@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background: #f1f5f9; color: #1e293b; }
+header { background: #1d4ed8; color: #fff; text-align: center; padding: 18px; }
+main { max-width: 900px; margin: 20px auto; padding: 0 12px; }
+.card { background: #fff; padding: 18px; margin-bottom: 16px;
+ border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+.card h2 { margin-bottom: 12px; font-size: 18px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+input { padding: 9px; border: 1px solid #cbd5e1; border-radius: 6px; flex: 1; min-width: 140px; }
+button { padding: 8px 14px; border: none; border-radius: 6px; cursor: pointer;
+ background: #1d4ed8; color: #fff; }
+button:hover { opacity: .9; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: #eff6ff; }
+.btn-p, .btn-a { background: #e2e8f0; color: #1e293b; margin-right: 4px; }
+.btn-p.active { background: #16a34a; color: #fff; }
+.btn-a.active { background: #dc2626; color: #fff; }
+.btn-del { background: #64748b; }
+.low { background: #fee2e2; }
+.low .percent { color: #dc2626; font-weight: bold; }
+.summary { display: flex; justify-content: space-around; font-size: 17px; }
+#emptyMsg { text-align: center; color: #64748b; margin-top: 10px; }
+@media (max-width: 600px) { .summary { flex-direction: column; gap: 8px; } }
